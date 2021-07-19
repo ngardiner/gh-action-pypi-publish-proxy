@@ -2,6 +2,15 @@
 name: pypi-publish
 description: Upload Python distribution packages to PyPI
 inputs:
+  http_proxy:
+    description: URL of HTTP Proxy to use
+    required: false
+  https_proxy:
+    description: URL of HTTPS Proxy to use
+    required: false
+  no_proxy:
+    description: Definition of URLs that we should not proxy for
+    required: false
   user:
     description: PyPI user
     required: false
