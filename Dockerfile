@@ -6,6 +6,8 @@ LABEL "homepage" "https://github.com/pypa/gh-action-pypi-publish"
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV http_proxy http://192.0.2.1:3128
+ENV https_proxy http://192.0.2.1:3128
 
 RUN \
   pip install --upgrade --no-cache-dir pip-with-requires-python && \
