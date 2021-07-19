@@ -53,3 +53,6 @@ runs:
   - ${{ inputs.verify_metadata }}
   - ${{ inputs.skip_existing }}
   - ${{ inputs.verbose }}
+  - ${{ inputs.http_proxy }}
+  - ${{ inputs.https_proxy }}
+  - ${{ inputs.no_proxy }}
