@@ -9,9 +9,8 @@ ENV PYTHONUNBUFFERED 1
 ENV http_proxy http://192.0.2.1:3128
 ENV https_proxy http://192.0.2.1:3128
 
-RUN \
-  apt-get -y update
-  apt-get install -y -q libffi-dev
+RUN apt-get -y update
+RUN apt-get install -y -q libffi-dev
 
 RUN \
   pip install --upgrade --no-cache-dir pip-with-requires-python && \
